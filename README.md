@@ -144,3 +144,44 @@ Optimization
   - What is more expensive? Creating a new Unity scene for making the initial game menu, or using a separated part of the main scene to do it? What is the efficiency / code management tradeoff?
 
   - How do I detect performance bottlenecks? For instance, my cow 3D mesh has 2904 triangle faces and are instanced several times for the scene rendering. How will I know if I am reaching a performance issue?
+
+## Game Design Analysis
+
+Level Design
+  - The idea was to divide the game level into 4 parts:
+
+    - Jump Mechanic: Jump and Double Jump
+      - Jump by going over small block
+      - Double jump by going over big block
+    - Sliding Mechanics: There is no drag on the floor. Hence, climbing ramps is not trivial.
+      - Ramp going up to show how hard it is to climb up
+      - Ramp going down to show how it is easy to lose control of the player
+    - Death Mechanic: Colliding with the green things is bad
+      - Quick respawn because it is a quick demo game
+      - Location of green thing lowered from the main level of the stage added with the different color, implies that player should jump over it
+      - Easy to skip? Easy to miss?
+    - All Combined: Place where player uses all knowledge so far
+      - Ramp with hazard nearby
+      - Tight platforming
+      - New application for jumping (vertical ladder)
+
+    !["Level Design Analysis"](documentation/img/level_design_analysis.png)
+
+Narrative Analysis
+
+  - I tried to divide the game into the following structure:
+
+    - Realization you are a cow (with the "vaca" sound effect on jump)
+      - Also, background characterization with static white cows
+    - Main platform game
+    - Realization you are not alone (with the "boi" sound effect at the end)
+    - Ecounter with the blue cow
+
+    !["Narrative Analysis"](documentation/img/narrative_analysis.png)
+
+## Art & Audio Analysis
+
+  - 3D Cow Model perhaps too complex? Could be simplified
+  - Different audio levels
+    - Specifically, the green hazard collision is too low
+  - Audio too noisy. Better filtering? Problems on recording?
