@@ -64,13 +64,14 @@ Game developed as a "Hello World" example as part of the froup RPG - Rio PUC Gam
   - WASD Movement (`PlayerMovement.cs`)
   - Spacebar (Double) Jump (`PlayerMovement.cs`)
   - Cow Model Snapping in 90 degrees quantization
+    - implemented by using sphere as collision shape and attaching a rigid body to it and locking its rotation in the Z axis. By watching the rotation, it was possible to quantize and make the cow model snap, for a  funny effect.
 
     !["Rio PUC Games Logo"](documentation/img/cow_snapping.png)
 
 ## Development Questions
 
 Documentation and Code Organization
-- What is a good naming convention for scripts? Variables? Functions>
+- What is a good naming convention for scripts? Variables? Functions?
   - Currently using: `ThisIsMyScriptName.cs` for files and `CamelCase` for code.
 
 - Any methods documentation patterns?
