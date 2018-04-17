@@ -1,3 +1,3 @@
-# Vaca Pontual Project
+# Vaca Pontual "Hello World" Unity Game
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/X-L5TZ0ug1w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+[!["Vaca Pontual Gameplay Footage"](documentation/img/vaca_pontual_thumbnail.png)](https://youtu.be/X-L5TZ0ug1w)
